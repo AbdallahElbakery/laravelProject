@@ -1,0 +1,74 @@
+.footer {
+  background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(../images/bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-icon {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  color: #33211D;
+  background: #DA9F5B;
+}
+.footer h4 {
+    letter-spacing: 3px; 
+    margin-bottom: 1rem; 
+}
+
+.footer p {
+    margin-bottom: 0.5rem; 
+}
+ .btn {
+    border-radius: 0%;
+    padding: 10px; 
+    margin-right: 0.5rem;
+}
+ input {
+    border-radius: 0%;
+    padding: 10px; 
+}
+
+.footer .input-group {
+    margin-top: 1rem; 
+}
+
+.footer .border-top {
+    border-top: 1px solid rgba(256, 256, 256, .1); 
+}
+
+.footer .text-white {
+    color: white;}
+
+.footer .text-uppercase {
+    text-transform: uppercase; 
+}
+
+.footer .container-fluid {
+    padding: 0 1rem; 
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 4rem 0; 
+    }
+}
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.btn-primary {
+  color: #212529;
+  background-color: #DA9F5B;
+  border-color: #DA9F5B;
+  padding: auto;
+}
