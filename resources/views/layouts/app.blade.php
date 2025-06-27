@@ -6,14 +6,19 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+       <style>
+             *{font-family: 'اسم_الخط', serif;}
+       </style>
+
   @yield('styles')
+
+
 </head>
 <body>
   @include('include.navbar')
-  <div class="container my-4 ">
     @yield('content')
-  </div>
+    <div class="container-fluid"></div>
   @include('include.footer')
-
+@yield("script")
 </body>
 </html>

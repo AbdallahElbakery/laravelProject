@@ -43,9 +43,5 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; . All Rights Reserved.</a></p>
-            <p class="m-0 text-white">Designed by:Abdelhalim <a class="font-weight-bold" href=""></a></p>
-        </div>
     </div>
 
