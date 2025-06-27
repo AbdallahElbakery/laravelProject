@@ -1,47 +1,90 @@
 <link rel="stylesheet" href="{{asset('css/footer.css')}}">
 
-    
-    <!-- Footer Start -->
-    <div class="container-fluid footer text-white mt-5 pt-5">
-        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+01114751979</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+<!-- Footer Start -->
+<div class="container-fluid footer py-5" style="background-color: #5D4037; color: #F5F5DC;">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Location, City, Country</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+01114751979</p>
+                <p class="m-0"><i class="fa fa-envelope me-2"></i>info@example.com</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="d-flex justify-content-start ">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 px-3" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-3 px-3 " href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 px-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 px-3" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2 px-3" href=""><i class="fab fa-youtube"></i></a>
+                <div class="d-flex">
+                    <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
-                <div>
-                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
-                    <p>8.00 AM - 8.00 PM</p>
-                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
-                    <p>2.00 PM - 8.00 PM</p>
-                </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
+                <h6 class="text-uppercase">Monday - Friday</h6>
+                <p>8.00 AM - 8.00 PM</p>
+                <h6 class="text-uppercase">Saturday - Sunday</h6>
+                <p>2.00 PM - 8.00 PM</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding:5px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold p-3">Sign Up</button>
-                        </div>
-                    </div>
+                <div class="position-relative">
+                    <input type="text" class="form-control border-0 w-100 py-3 ps-4 pe-5" placeholder="Your Email">
+                    <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-0 py-3 px-4" style="background-color: #8B4513; border-color: #8B4513;">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<style>
+    .footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.footer h4 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #D6943F;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+}
+
+.footer .btn-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+.footer .btn-outline-light:hover {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+.footer input::placeholder {
+    color: #6C6C6C;
+}
+
+@media (max-width: 768px) {
+    .footer .col-md-6 {
+        margin-bottom: 2rem;
+    }
+}
+</style>
