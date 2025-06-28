@@ -16,7 +16,7 @@
         --hover-shadow: rgba(0, 0, 0, 0.25);
         --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         --border-radius: 12px;
-        --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --font-primary: 'serif';
         --font-secondary: 'Georgia', serif;
     }
 
@@ -77,7 +77,7 @@
     }
 
     .slide-1::before {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/img1.webp');
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../images/img1.webp');
     }
 
     .slide-2::before {
@@ -85,7 +85,7 @@
     }
 
     .slide-3::before {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/img3.webp');
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../images/img3.webp');
     }
 
     @keyframes zoomEffect {
@@ -111,11 +111,10 @@
 
     .slide-content span {
         display: block;
-        font-size: clamp(1rem, 2vw, 1.2rem);
+        font-size: clamp(1rem, 2vw, 1.6rem);
         color: var(--secondary-color);
         font-weight: 600;
         margin-bottom: 1rem;
-        text-transform: uppercase;
         letter-spacing: 2px;
     }
 
@@ -131,7 +130,8 @@
 
     .shop-btn {
         display: inline-block;
-        background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+        /* background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); */
+        background-color: #CD853F;
         color: var(--white);
         padding: 1rem 2.5rem;
         font-size: 1.1rem;
@@ -368,17 +368,15 @@
         transform: scale(1.1);
     }
 
-    .product-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(transparent, rgba(0,0,0,0.8));
-        padding: 3rem 2rem 2rem;
-        color: var(--white);
-        transform: translateY(20px);
-        transition: var(--transition);
-    }
+   .product-content {
+    position: absolute;
+    bottom: 70px;
+    right: 0; 
+    padding: 3rem 2rem 2rem;
+    color: rgba(34, 34, 34,0.7);
+    transform: translateY(20px);
+    transition: var(--transition);
+}
 
     .product-card:hover .product-content {
         transform: translateY(0);
@@ -398,7 +396,9 @@
     }
 
     .product-btn {
-        background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+        /* background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); */
+                background-color: #CD853F;
+
         color: var(--white);
         padding: 0.8rem 2rem;
         border: none;
@@ -607,21 +607,25 @@
 <section class="popular-section">
     <div class="container">
         <h2 class="section-title fade-in-up">Popular Products</h2>
-        <div class="product-grid">
-            <div class="product-card fade-in-up">
-                <div class="product-bg" style="background-image: url('../images/hero3.webp');"></div>
-                <div class="product-content">
-                    <h5>Italian Roasted Coffee</h5>
-                    <p>Hot & Delicious - Premium Quality</p>
-                    <a href="#" class="product-btn">SEE NOW</a>
+        <div class="row">
+            <div class="col-6">
+                <div class="product-card fade-in-up">
+                    <div class="product-bg" style="background-image: url('../images/hero3.webp');"></div>
+                    <div class="product-content">
+                        <h5>Italian Roasted Coffee</h5>
+                        <p>Hot & Delicious - Premium Quality</p>
+                        <a href="#" class="product-btn">SEE NOW</a>
+                    </div>
                 </div>
             </div>
-            <div class="product-card fade-in-up">
-                <div class="product-bg" style="background-image: url('../images/hero4.webp');"></div>
-                <div class="product-content">
-                    <h5>Hot Cappuccino Coffee</h5>
-                    <p>Hot & Delicious - Artisan Crafted</p>
-                    <a href="#" class="product-btn">SEE NOW</a>
+            <div class="col-6">
+                <div class="product-card fade-in-up">
+                    <div class="product-bg" style="background-image: url('../images/hero4.webp');"></div>
+                    <div class="product-content">
+                        <h5>Hot Cappuccino Coffee</h5>
+                        <p>Hot & Delicious - Artisan Crafted</p>
+                        <a href="#" class="product-btn">SEE NOW</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -713,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleSwipe() {
         const swipeThreshold = 50;
         const swipeDistance = touchEndX - touchStartX;
-        
+
         if (Math.abs(swipeDistance) > swipeThreshold) {
             if (swipeDistance > 0) {
                 prevSlide();
