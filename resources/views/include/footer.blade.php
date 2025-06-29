@@ -18,7 +18,7 @@
                     <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-square me-2" href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -31,9 +31,9 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="position-relative">
-                    <input type="text" class="form-control border-0 w-100 py-3 ps-4 pe-5" placeholder="Your Email">
-                    <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-0 py-3 px-4" style="background-color: #8B4513; border-color: #8B4513;">Sign Up</button>
+                <div class="position-relative d-flex">
+                    <input type="text" class="form-control border-0 w-100   " style="height: 50px" placeholder="Your Email">
+                    <button type="button" class="btn btn-primary " style="height:50px; width:100px">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -65,22 +65,14 @@
 }
 
 .footer .btn-square {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0;
 }
 
-.footer .btn-outline-light:hover {
-    background-color: #8B4513;
-    border-color: #8B4513;
-}
-
-.footer input::placeholder {
-    color: #6C6C6C;
-}
 
 @media (max-width: 768px) {
     .footer .col-md-6 {
