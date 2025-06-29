@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 45px;
-  color: #33211D;
   background: #DA9F5B;
 }
 .footer h4 {
@@ -30,8 +29,7 @@
     margin-right: 0.5rem;
 }
  input {
-    border-radius: 0%;
-    padding: 10px; 
+    border-radius:0%;
 }
 
 .footer .input-group {
@@ -67,8 +65,20 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 .btn-primary {
-  color: #212529;
   background-color: #DA9F5B;
   border-color: #DA9F5B;
   padding: auto;
+    margin-right: -40px;
+
+  
+}
+.btn-primary:hover {
+  background-color: #ed922b;
+  border-color: #DA9F5B;
+  padding: auto;
+  
+}
+.form-control{
+    border-radius: 0px;
+    padding: -10px;
 }
