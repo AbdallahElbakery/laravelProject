@@ -20,7 +20,10 @@
                     <a class="nav-link" href="login.html" style="color: #F5F5DC;">Manual Order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #F5F5DC;">Checks</a>
+                    <a class="nav-link" href="/checks" style="color: #F5F5DC;">Checks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/orders" style="color: #F5F5DC;">All Orders</a>
                 </li>
             </ul>
        
