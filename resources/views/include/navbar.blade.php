@@ -11,7 +11,7 @@
                     <a class="nav-link active" href="{{route('home.page')}}" style="color: #F5F5DC;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #F5F5DC;">Product</a>
+                    <a class="nav-link" href="/products" style="color: #F5F5DC;">Product</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: #F5F5DC;">Users</a>
