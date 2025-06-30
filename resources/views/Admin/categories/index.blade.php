@@ -82,7 +82,7 @@
                     <img src="{{asset('images/catogry/CoffeCategory.jpg')}}" class="card-img-top category-img" alt="Electronics">
                     <div class="card-body">
                         <h5 class="card-title">Coffe</h5>
-                        <p class="card-text text-muted">Devices, gadgets, and electronic components</p>
+                        <p class="card-text text-muted"></p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-success">Active</span>
                             <div>
@@ -104,7 +104,7 @@
                     <img src="{{asset('images/catogry/JuiceCategory.avif')}}" class="card-img-top category-img" alt="Clothing">
                     <div class="card-body">
                         <h5 class="card-title">Juice</h5>
-                        <p class="card-text text-muted">Men's, women's and children's apparel</p>
+                        <p class="card-text text-muted"></p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-success">Active</span>
                             <div>
@@ -126,7 +126,7 @@
                     <img src="{{asset('images/catogry/DesertCategory.jpg')}}" class="card-img-top category-img" alt="Furniture">
                     <div class="card-body">
                         <h5 class="card-title">Desert</h5>
-                        <p class="card-text text-muted">Home and office furniture</p>
+                        <p class="card-text text-muted"></p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-warning text-dark">Inactive</span>
                             <div>
