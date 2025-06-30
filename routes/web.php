@@ -26,6 +26,13 @@ Route::get('/add-product', function () {
 });
 //=======
 
+______________________________________________________________________________________________________________
+Route::get('Admin/categories', function () {
+    // return view('Admin.categories.index');
+    // return view('Admin.categories.create');
+    return view('Admin.categories.edit');
+});
+___________________________________________________________________________________________________________
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
