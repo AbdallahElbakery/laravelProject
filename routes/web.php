@@ -6,26 +6,28 @@ Route::get('/', function () {
 })->name('home.page');
 
 Route::get('/products', function () {
-    return view('products');
+    return view('user.products.products');
 });
 
 Route::get('/checks', function () {
-    return view('checks');
+    return view('Admin.checks.checks');
 });
 
 Route::get('/orders', function () {
-    return view('orders');
+    return view('Admin.orders.orders');
 });
 
 //<<<<<<< mohrail
 Route::get('/edit-product', function () {
-    return view('edit');
+    return view('Admin.products.edit');
 });
 Route::get('/add-product', function () {
-    return view('create');
+    return view('Admin.products.create');
 });
 
-
+Route::get('/myorder', function () {
+    return view('user.order.myorder');
+});
 
 
 Route::get('Admin/categories', function () {
