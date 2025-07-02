@@ -24,15 +24,16 @@ Route::get('/edit-product', function () {
 Route::get('/add-product', function () {
     return view('create');
 });
-//=======
 
-______________________________________________________________________________________________________________
+
+
+
 Route::get('Admin/categories', function () {
     // return view('Admin.categories.index');
     // return view('Admin.categories.create');
     return view('Admin.categories.edit');
 });
-___________________________________________________________________________________________________________
+
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
