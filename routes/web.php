@@ -16,6 +16,9 @@ Route::get('/checks', function () {
 Route::get('/orders', function () {
     return view('Admin.orders.orders');
 });
+Route::get('createorders', function () {
+    return view('Admin.orders.createorder');
+});
 
 //<<<<<<< mohrail
 Route::get('/edit-product', function () {
@@ -30,10 +33,15 @@ Route::get('/myorder', function () {
 });
 
 
-Route::get('Admin/categories', function () {
+Route::get('addcategories', function () {
     // return view('Admin.categories.index');
+    return view('Admin.categories.create');
+    // return view('Admin.categories.edit');
+});
+Route::get('categories', function () {
+    return view('Admin.categories.index');
     // return view('Admin.categories.create');
-    return view('Admin.categories.edit');
+    // return view('Admin.categories.edit');
 });
 
 Auth::routes();
