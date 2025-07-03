@@ -23,6 +23,9 @@
                     <a class="nav-link" href="login.html" style="color: #F5F5DC;">Manual Order</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route('categories.index')}}" style="color: #F5F5DC;">categories</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/checks" style="color: #F5F5DC;">Checks</a>
                 </li>
                 <li class="nav-item">

@@ -2,7 +2,6 @@
 
 @section('styles')
 <style>
-    /* Root Variables for Brand Identity */
     :root {
         --primary-color: #8B4513;
         --secondary-color: #D6943F;
@@ -15,7 +14,7 @@
         --gray: #6C6C6C;
         --shadow: rgba(0, 0, 0, 0.15);
         --hover-shadow: rgba(0, 0, 0, 0.25);
-        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --transition: all 0.3s ease;
         --border-radius: 12px;
         --font-primary: 'serif';
         --font-secondary: 'Georgia', serif;
@@ -24,63 +23,60 @@
 @endsection
 
 @section('content')
-<div class="container mt-5">
+<div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header ">
-                    <h4 class="mb-0">Edit Category
-                    </h4>
+                <div class="card-header">
+                    <h4 class="mb-0 text-center">Edit Category</h4>
                 </div>
                 <div class="card-body">
-                    <form>
-                        <!-- Category Information Section -->
+                    <form method="POST" action="{{ route('categories.update', $category->id) }}" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
+
+                        <!-- Category Info -->
                         <div class="mb-4">
                             <h5 class="text-primary mb-3">
                                 <i class="fas fa-info-circle me-2"></i>Category Information
                             </h5>
                             <div class="row g-3">
-                                <!-- Category ID (readonly) -->
                                 <div class="col-md-6">
                                     <label for="categoryId" class="form-label">Category ID</label>
-                                    <input type="text" class="form-control" id="categoryId" placeholder="CAT-001" readonly>
+                                    <input type="text" class="form-control" id="categoryId" value="{{ $category->id }}" readonly>
                                 </div>
-                                
-                                <!-- Category Name -->
                                 <div class="col-md-6">
                                     <label for="categoryName" class="form-label">Category Name</label>
-                                    <input type="text" class="form-control" id="categoryName" placeholder="Coffe Espreso" required>
+                                    <input type="text" class="form-control" id="categoryName" name="name" value="{{ old('name', $category->name) }}" required>
                                 </div>
-                                
-                                
-                                <!-- Description -->
                                 <div class="col-12">
                                     <label for="categoryDescription" class="form-label">Description</label>
-                                    <textarea class="form-control" id="categoryDescription" rows="3"></textarea>
+                                    <textarea class="form-control" id="categoryDescription" name="description" rows="3">{{ old('description', $category->description) }}</textarea>
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                        <!-- Display Settings Section -->
+
+                        <!-- Category Image -->
                         <div class="mb-4">
                             <div class="row g-3">
-                                <!-- Category Image -->
                                 <div class="col-md-8">
                                     <label for="categoryImage" class="form-label">Category Image</label>
-                                    <input class="form-control" type="file" id="categoryImage">
+                                    <input class="form-control" type="file" id="categoryImage" name="image">
+                                    @if($category->image)
+                                        <img src="{{ asset('images/catogry/' . $category->image) }}" alt="Category Image" class="img-thumbnail mt-2" style="height: 100px;">
+                                    @endif
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Form Buttons -->
-                        <div class="d-flex justify-content-between mt-4">
-                            <button type="button" class="btn btn-outline-secondary">
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-start mt-4">
+                            <a href="{{ route('categories.index') }}" class="btn btn-outline-secondary">
                                 <i class="fas fa-times me-2"></i>Cancel
-                            </button>
+                            </a>
                             <div>
-                                <button type="button" class="btn btn-primary ">
-                                    <i class="fas fa-trash me-2"></i>Clear All
+                                <button type="reset" class="btn btn-danger">
+                                    <i class="fas fa-trash me-2"></i>Clear
                                 </button>
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fas fa-save me-2"></i>Save Changes
@@ -94,5 +90,3 @@
     </div>
 </div>
 @endsection
-
-
