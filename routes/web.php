@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('Home');
 })->name('home.page');
@@ -31,6 +32,10 @@ Route::get('/add-product', function () {
 Route::get('/myorder', function () {
     return view('user.order.myorder');
 });
+Route::get('/add-product', [ProductController::class, 'create'])->name('products.create');
+Route::post('/add-product', [ProductController::class, 'store'])->name('products.store');
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+
 
 
 Route::get('addcategories', function () {
@@ -51,3 +56,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 //>>>>>>> main
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
