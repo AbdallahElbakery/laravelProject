@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container my-5">
-    <h2 class="mb-4 text-center">🧾 Create Order for User</h2>
+    <h2 class="mb-4 text-center">Create Order for User</h2>
 
     {{-- رسائل الخطأ --}}
     @if ($errors->any())
@@ -89,8 +89,8 @@
                     <p class="card-text text-muted">{{ $product['description'] }}</p>
                     <div class="mt-auto">
                         <p class="fw-bold text-success mb-2">EGP {{ $product['price'] }}.00</p>
-                            <input type="hidden" name="products[{{ $loop->index }}][id]" value="{{ $product->id }}">
-                            <input type="number" name="products[{{ $loop->index }}][quantity]" class="form-control mt-2" min="0" placeholder="Quantity">                    </div>
+                            <input type="hidden" name="products[id]" value="">
+                            <input type="number" name="products[quantity]" class="form-control mt-2" min="0" placeholder="Quantity">                    </div>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
 
     </div>
         <div class="text-center mt-4">
-            <button type="submit" class="btn btn-success"> Submit Order</button>
+            <button type="submit" class="btn btn-primary w-25"> Submit Order</button>
         </div>
     </form>
 </div>
