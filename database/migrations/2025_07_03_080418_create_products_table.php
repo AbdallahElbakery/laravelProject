@@ -18,7 +18,6 @@ return new class extends Migration
             $table->decimal('price', 8, 2);
             $table->string('image');
             $table->boolean('is_available')->default(true);
-            $table->foreignId('category_id')->constrained('categories')->onDelete('set null')->onUpdate('set null');
             $table->timestamps();
         });
     }
