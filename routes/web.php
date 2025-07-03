@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\categories\CategoryController;
 Route::get('/', function () {
     return view('Home');
 })->name('home.page');
@@ -44,6 +45,12 @@ Route::get('categories', function () {
     // return view('Admin.categories.edit');
 });
 
+
+
+// categories
+Route::resource('categories', CategoryController::class);
+
+// auth login and register .....
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
