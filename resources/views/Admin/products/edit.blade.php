@@ -1,5 +1,30 @@
 @extends('layouts.app')
+@section('styles')
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
 
+    .form-label {
+        font-weight: bold;
+        color: #5D4037;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn-success {
+        background-color: #8B4513;
+        border: none;
+        font-weight: bold;
+    }
+
+    .btn-success:hover {
+        background-color: #A0522D;
+    }
+</style>
+@endsection
 @section('content')
 <div class="container my-5">
     <h2 class="text-center mb-4">Edit Product</h2>
@@ -46,29 +71,4 @@
 </div>
 @endsection
 
-@section('styles')
-<style>
-    body {
-        background-color: #f8f9fa;
-    }
 
-    .form-label {
-        font-weight: bold;
-        color: #5D4037;
-    }
-
-    .form-control {
-        border-radius: 10px;
-    }
-
-    .btn-success {
-        background-color: #8B4513;
-        border: none;
-        font-weight: bold;
-    }
-
-    .btn-success:hover {
-        background-color: #A0522D;
-    }
-</style>
-@endsection
