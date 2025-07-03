@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'image',
+        'role',
+        'room_number'
     ];
 
     /**
@@ -33,6 +36,10 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function orders()
+    {
+        return $this->hasMany(\App\Models\Order::class);
+    }
     /**
      * Get the attributes that should be cast.
      *

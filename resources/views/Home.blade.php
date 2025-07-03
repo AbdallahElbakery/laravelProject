@@ -3,7 +3,7 @@
 <style>
     /* Root Variables for Brand Identity */
     :root {
-        --primary-color: #8B4513;
+        --primary-color: #52331c;
         --secondary-color: #D6943F;
         --accent-color: #CD853F;
         --dark-brown: #5D4037;
@@ -112,7 +112,7 @@
     .slide-content span {
         display: block;
         font-size: clamp(1rem, 2vw, 1.6rem);
-        color: var(--secondary-color);
+        color: rgba(0, 0, 0, 0.5);
         font-weight: 600;
         margin-bottom: 1rem;
         letter-spacing: 2px;
@@ -147,9 +147,9 @@
     }
 
     .shop-btn:hover {
-        background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+        background-color: #CD853F;
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(214, 148, 63, 0.4);
+        box-shadow: 0 8px 25px rgba(249, 178, 84, 0.4);
         color: var(--white);
     }
 
@@ -158,7 +158,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(249, 178, 84, 0.4);
         backdrop-filter: blur(10px);
         color: var(--white);
         border: none;
@@ -175,7 +175,7 @@
     }
 
     .nav-btn:hover {
-        background: var(--white);
+        background-color: #D6943F;
         color: var(--primary-color);
         transform: translateY(-50%) scale(1.1);
     }
@@ -214,8 +214,8 @@
 
     .section-title {
         text-align: center;
-        font-size: clamp(2rem, 4vw, 3rem);
-        font-weight: 700;
+        font-size: clamp(1rem, 4vw, 2rem);
+        font-weight: 600;
         color: var(--primary-color);
         margin-bottom: 3rem;
         font-family: var(--font-secondary);
@@ -281,7 +281,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(135deg, rgba(139, 69, 19, 0.8), rgba(214, 148, 63, 0.8));
+        background: linear-gradient(135deg, rgba(139, 69, 19, 0.4), rgba(214, 148, 63, 0.4));
         opacity: 0;
         transition: var(--transition);
         display: flex;
@@ -319,7 +319,7 @@
     }
 
     .category-btn:hover {
-        background: var(--secondary-color);
+        background-color: #A0522D;
         color: var(--white);
         transform: scale(1.05);
     }
@@ -371,7 +371,7 @@
    .product-content {
     position: absolute;
     bottom: 70px;
-    right: 0; 
+    right: 0;
     padding: 3rem 2rem 2rem;
     color: rgba(34, 34, 34,0.7);
     transform: translateY(20px);
@@ -397,7 +397,7 @@
 
     .product-btn {
         /* background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); */
-                background-color: #CD853F;
+                background-color: #D6943F;
 
         color: var(--white);
         padding: 0.8rem 2rem;
@@ -412,7 +412,7 @@
     }
 
     .product-btn:hover {
-        background: linear-gradient(135deg, var(--accent-color), var(--light-brown));
+        background-color: #A0522D;
         color: var(--white);
         transform: scale(1.05);
     }
