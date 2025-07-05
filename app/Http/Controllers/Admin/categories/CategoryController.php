@@ -50,7 +50,7 @@ public function store(Request $request)
         'image' => $filename,
     ]);
 
-    return redirect()->route('categories.index')->with('success', 'Category created successfully.');
+    return to_route('categories.index')->with('success', 'Category created successfully.');
 }
 
     /**
@@ -98,7 +98,7 @@ public function update(Request $request, string $id)
 
     $category->update($data);
 
-    return redirect()->route('categories.index')->with('success', 'Category updated successfully.');
+    return to_route('categories.index')->with('success', 'Category updated successfully.');
 }
 
 
