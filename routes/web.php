@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\categories\CategoryController;
+use App\Http\Controllers\Admin\CheckController;
 Route::get('/', function () {
     return view('Home');
 })->name('home.page');
@@ -10,9 +11,7 @@ Route::get('/products', function () {
     return view('user.products.products');
 });
 
-Route::get('/checks', function () {
-    return view('Admin.checks.checks');
-});
+Route::get('/checks', [CheckController::class, 'index'])->name('checks.index');
 
 Route::get('/orders', function () {
     return view('Admin.orders.orders');
