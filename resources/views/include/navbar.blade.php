@@ -11,14 +11,12 @@
                     <a class="nav-link active" href="{{route('home.page')}}" style="color: #F5F5DC;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products" style="color: #F5F5DC;">Product</a>
+                    <a class="nav-link" href="{{route('products.index')}}" style="color: #F5F5DC;">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #F5F5DC;">Users</a>
+                    <a class="nav-link" href="{{route('users.index')}}" style="color: #F5F5DC;">Users</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #F5F5DC;">My Oeders</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="login.html" style="color: #F5F5DC;">Manual Order</a>
                 </li>
@@ -30,6 +28,15 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/orders" style="color: #F5F5DC;">All Orders</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #F5F5DC;">products</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #F5F5DC;">Cart</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #F5F5DC;">My Oeders</a>
                 </li>
             </ul>
 

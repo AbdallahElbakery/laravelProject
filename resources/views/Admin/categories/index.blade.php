@@ -33,7 +33,7 @@
 
     .category-img {
         height: 180px;
-        object-fit: contain;
+        object-fit:fill;
     }
 
     .btn-action {
@@ -73,7 +73,7 @@
                             <a class="btn btn-sm btn-outline-primary btn-action me-2" href="{{route('categories.edit',$category->id)}}">
                                 <i class="fas fa-edit"></i>
                             </a>
-                            <form action="{{ route('categories.destroy', $category->id) }}" method="POST" style="display:inline-block;" onsubmit="return confirm('Are you sure?');">
+                            <form action="{{ route('categories.destroy', $category->id) }}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-sm btn-outline-primary text-danger btn-action me-2"> <i class="fas fa-trash"></i>
